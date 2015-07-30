@@ -92,6 +92,35 @@
 	}
 }
 
+// Featured Subverse submission row overrides
+.alert-featuredsub {
+	.submission {
+		.entry {
+			>p.title,
+			>p.tagline {
+
+				@if $display-thumbnails == true {
+					
+					padding-left:132px;
+					
+				} @else {
+					
+					padding-left:54px;
+					
+				}
+			}
+		}
+	}
+	
+	@if $display-thumbnails == true {
+		
+		a.title:before {
+			left:57px;
+		}
+		
+	}
+}
+
 // Targets entry only on comments page
 #firsttimevisitorwelcomemessage ~ #siteTable .entry {
 	> p.title,
